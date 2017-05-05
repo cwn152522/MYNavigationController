@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--行情-->
         <scene sceneID="vgh-62-Ue0">
             <objects>
                 <viewController id="fUA-Ea-FeM" sceneMemberID="viewController">
@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.74059212874722236" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="LMv-Bm-99e"/>
+                    <tabBarItem key="tabBarItem" title="行情" image="market_1" selectedImage="market" id="LMv-Bm-99e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQj-7i-cUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="-367.19999999999999" y="732.68365817091455"/>
         </scene>
-        <!--Item 1-->
+        <!--我-->
         <scene sceneID="2DN-jR-c38">
             <objects>
                 <viewController id="T5g-jj-MCp" sceneMemberID="viewController">
@@ -128,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="v6T-m5-5Pt"/>
+                    <tabBarItem key="tabBarItem" title="我" image="main_1" selectedImage="main_2" id="v6T-m5-5Pt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7a-mg-KGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,19 +145,19 @@
                     </tabBar>
                     <connections>
                         <segue destination="nf9-4z-2SM" kind="relationship" relationship="viewControllers" id="9x8-vL-5pB"/>
-                        <segue destination="T5g-jj-MCp" kind="relationship" relationship="viewControllers" id="O3y-9Q-lVo"/>
                         <segue destination="fUA-Ea-FeM" kind="relationship" relationship="viewControllers" id="jBS-kb-bef"/>
+                        <segue destination="T5g-jj-MCp" kind="relationship" relationship="viewControllers" id="O3y-9Q-lVo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HiZ-iI-TMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2193" y="-44"/>
         </scene>
-        <!--Item-->
+        <!--首页-->
         <scene sceneID="SlZ-uT-Ckm">
             <objects>
                 <navigationController id="nf9-4z-2SM" customClass="MYNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Hph-RC-pGA"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="Home_1" selectedImage="Home" id="Hph-RC-pGA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zt4-fo-aeT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -400,9 +400,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Home" width="21" height="19"/>
+        <image name="Home_1" width="21" height="19"/>
         <image name="image1.png" width="463" height="108"/>
         <image name="image2.png" width="528" height="420"/>
         <image name="image3.png" width="532" height="359"/>
         <image name="image4.png" width="475" height="217"/>
+        <image name="main_1" width="21" height="19"/>
+        <image name="main_2" width="21" height="19"/>
+        <image name="market" width="20" height="20"/>
+        <image name="market_1" width="20" height="20"/>
     </resources>
 </document>
